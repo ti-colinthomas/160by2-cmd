@@ -27,7 +27,7 @@ browser.text_field(:name => "txt_msg").set $message.to_s()
 browser.button(:id => "cmdSend").click
 
 if browser.text.include? "Successfully"
-puts "Message sent successfully to " + $contact.to_s()
+puts "Message sent successfully, to " + $contact.to_s()
 else
 puts "ERROR"
 end
